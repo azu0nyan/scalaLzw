@@ -1,0 +1,1300 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Lempel–Ziv–Welch - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a2f14bfb-1f2b-4494-b7ae-a8a2cfeb1341","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lempel–Ziv–Welch","wgTitle":"Lempel–Ziv–Welch","wgCurRevisionId":1050757532,"wgRevisionId":1050757532,"wgArticleId":75854,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles lacking in-text citations from August 2017","All articles lacking in-text citations","Articles with example pseudocode","Lossless compression algorithms","Computer-related introductions in 1984",
+"Discovery and invention controversies"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Lempel–Ziv–Welch","wgRelevantArticleId":75854,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgNoticeProject":"wikipedia","wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q2681","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,
+"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP",
+"ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.9"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Lempel–Ziv–Welch - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Lempel–Ziv–Welch rootpage-Lempel–Ziv–Welch skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Lempel–Ziv–Welch</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Universal lossless data compression algorithm</div>
+<table class="box-No_footnotes plainlinks metadata ambox ambox-style ambox-No_footnotes" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, related reading or <a href="/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, <b>but its sources remain unclear because it lacks <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" class="mw-redirect" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <span class="date-container"><i>(<span class="date">August 2017</span>)</i></span><span class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></span></div></td></tr></tbody></table>
+<p><b>Lempel&#8211;Ziv&#8211;Welch</b> (<b>LZW</b>) is a universal <a href="/wiki/Lossless_data_compression" class="mw-redirect" title="Lossless data compression">lossless data compression</a> <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> created by <a href="/wiki/Abraham_Lempel" title="Abraham Lempel">Abraham Lempel</a>, <a href="/wiki/Jacob_Ziv" title="Jacob Ziv">Jacob Ziv</a>, and <a href="/wiki/Terry_Welch" title="Terry Welch">Terry Welch</a>. It was published by Welch in 1984 as an improved implementation of the <a href="/wiki/LZ77_and_LZ78" title="LZ77 and LZ78">LZ78</a> algorithm published by Lempel and Ziv in 1978. The algorithm is simple to implement and has the potential for very high throughput in hardware implementations.<sup id="cite_ref-WelchIEEE_1-0" class="reference"><a href="#cite_note-WelchIEEE-1">&#91;1&#93;</a></sup>  It is the algorithm of the widely used <a href="/wiki/Unix" title="Unix">Unix</a> file compression utility <a href="/wiki/Compress" title="Compress">compress</a> and is used in the <a href="/wiki/GIF" title="GIF">GIF</a> image format.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Algorithm"><span class="tocnumber">1</span> <span class="toctext">Algorithm</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Encoding"><span class="tocnumber">1.1</span> <span class="toctext">Encoding</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Decoding"><span class="tocnumber">1.2</span> <span class="toctext">Decoding</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Variable-width_codes"><span class="tocnumber">1.3</span> <span class="toctext">Variable-width codes</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Packing_order"><span class="tocnumber">1.4</span> <span class="toctext">Packing order</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Encoding_2"><span class="tocnumber">2.1</span> <span class="toctext">Encoding</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Decoding_2"><span class="tocnumber">2.2</span> <span class="toctext">Decoding</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Further_coding"><span class="tocnumber">3</span> <span class="toctext">Further coding</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Uses"><span class="tocnumber">4</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Patents"><span class="tocnumber">5</span> <span class="toctext">Patents</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Variants"><span class="tocnumber">6</span> <span class="toctext">Variants</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Algorithm">Algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=1" title="Edit section: Algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The scenario described by Welch's 1984 paper<sup id="cite_ref-WelchIEEE_1-1" class="reference"><a href="#cite_note-WelchIEEE-1">&#91;1&#93;</a></sup> encodes sequences of 8-bit data as fixed-length 12-bit codes.  The codes from 0 to 255 represent 1-character sequences consisting of the corresponding 8-bit character, and the codes 256 through 4095 are created in a dictionary for sequences encountered in the data as it is encoded.  At each stage in compression, input bytes are gathered into a sequence until the next character would make a sequence with no code yet in the dictionary.  The code for the sequence (without that character) is added to the output, and a new code (for the sequence with that character) is added to the dictionary.
+</p><p>The idea was quickly adapted to other situations.  In an image based on a color table, for example, the natural character alphabet is the set of color table indexes, and in the 1980s, many images had small color tables (on the order of 16 colors).  For such a reduced alphabet, the full 12-bit codes yielded poor compression unless the image was large, so the idea of a <b>variable-width</b> code was introduced:  codes typically start one bit wider than the symbols being encoded, and as each code size is used up, the code width increases by 1 bit, up to some prescribed maximum (typically 12 bits).  When the maximum code value is reached, encoding proceeds using the existing table, but new codes are not generated for addition to the table.
+</p><p>Further refinements include reserving a code to indicate that the code table should be cleared and restored to its initial state (a "clear code", typically the first value immediately after the values for the individual alphabet characters), and a code to indicate the end of data (a "stop code", typically one greater than the clear code).  The clear code lets the table be reinitialized after it fills up, which lets the encoding adapt to changing patterns in the input data.  Smart encoders can monitor the compression efficiency and clear the table whenever the existing table no longer matches the input well.
+</p><p>Since codes are added in a manner determined by the data, the decoder mimics building the table as it sees the resulting codes.  It is critical that the encoder and decoder agree on the variety of LZW used: the size of the alphabet, the maximum table size (and code width), whether variable-width encoding is used, initial code size, and whether to use the clear and stop codes (and what values they have).  Most formats that employ LZW build this information into the format specification or provide explicit fields for them in a compression header for the data.
+</p>
+<h3><span class="mw-headline" id="Encoding">Encoding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=2" title="Edit section: Encoding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A high level view of the encoding algorithm is shown here:
+</p>
+<ol><li>Initialize the dictionary to contain all strings of length one.</li>
+<li>Find the longest string W in the dictionary that matches the current input.</li>
+<li>Emit the dictionary index for W to output and remove W from the input.</li>
+<li>Add W followed by the next symbol in the input to the dictionary.</li>
+<li>Go to Step 2.</li></ol>
+<p>A dictionary is initialized to contain the single-character strings corresponding to all the possible input characters (and nothing else except the clear and stop codes if they're being used). The algorithm works by scanning through the input string for successively longer substrings until it finds one that is not in the dictionary. When such a string is found, the index for the string without the last character (i.e., the longest substring that <i>is</i> in the dictionary) is retrieved from the dictionary and sent to output, and the new string (including the last character) is added to the dictionary with the next available code. The last input character is then used as the next starting point to scan for substrings.
+</p><p>In this way, successively longer strings are registered in the dictionary and available for subsequent encoding as single output values. The algorithm works best on data with repeated patterns, so the initial parts of a message see little compression. As the message grows, however, the <a href="/wiki/Data_compression_ratio" title="Data compression ratio">compression ratio</a> tends asymptotically to the maximum (i.e., the compression factor or ratio improves on an increasing curve, and not linearly, approaching a theoretical maximum inside a limited time period rather than over infinite time).<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Decoding">Decoding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=3" title="Edit section: Decoding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The decoding algorithm works by reading a value from the encoded input and outputting the corresponding string from the dictionary. However, the full dictionary is not needed, only the initial dictionary that contains single-character strings (and that is usually <a href="/wiki/Hard_coding" title="Hard coding">hard coded</a> in the program, instead of sent with the encoded data). Instead, the full dictionary is rebuilt during the decoding process the following way: after decoding a value and outputting a string, the decoder <a href="/wiki/Concatenation" title="Concatenation">concatenates</a> it with the first character of the <i>next</i> decoded string (or the first character of current string, if the next one can't be decoded; since if the next value is unknown, then it must be the value added to the dictionary in <i>this</i> iteration, and so its first character is the same as the first character of the current string), and updates the dictionary with the new string. The decoder then proceeds to the next input (which was already read in the previous iteration) and processes it as before, and so on until it has exhausted the input stream.
+</p>
+<h3><span class="mw-headline" id="Variable-width_codes">Variable-width codes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=4" title="Edit section: Variable-width codes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If variable-width codes are being used, the encoder and decoder must be careful to change the width at the same points in the encoded data so they don't disagree on boundaries between individual codes in the stream. In the standard version, the encoder increases the width from <i>p</i> to <i>p</i>&#160;+&#160;1 when a sequence ω&#160;+&#160;<i>s</i> is encountered that is not in the table (so that a code must be added for it) but the next available code in the table is 2<sup><i>p</i></sup> (the first code requiring <i>p</i>&#160;+&#160;1 bits).  The encoder emits the code for ω at width <i>p</i> (since that code does not require <i>p</i>&#160;+&#160;1 bits), and then increases the code width so that the next code emitted is <i>p</i>&#160;+&#160;1 bits wide.
+</p><p>The decoder is always one code behind the encoder in building the table, so when it sees the code for ω, it generates an entry for code 2<sup><i>p</i></sup>&#160;&#8722;&#160;1.  Since this is the point where the encoder increases the code width, the decoder must increase the width here as well—at the point where it generates the largest code that fits in <i>p</i> bits.
+</p><p>Unfortunately, some early implementations of the encoding algorithm increase the code width and <i>then</i> emit ω at the new width instead of the old width, so that to the decoder it looks like the width changes one code too early.  This is called "early change"; it caused so much confusion that Adobe now allows both versions in PDF files, but includes an explicit flag in the header of each LZW-compressed stream to indicate whether early change is being used.  Of the graphics file formats that support LZW compression, <a href="/wiki/TIFF" title="TIFF">TIFF</a> uses early change, while <a href="/wiki/GIF" title="GIF">GIF</a> and most others don't.
+</p><p>When the table is cleared in response to a clear code, both encoder and decoder change the code width after the clear code back to the initial code width, starting with the code immediately following the clear code.
+</p>
+<h3><span class="mw-headline" id="Packing_order">Packing order</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=5" title="Edit section: Packing order">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Since the codes emitted typically do not fall on byte boundaries, the encoder and decoder must agree on how codes are packed into bytes.  The two common methods are <i>LSB-first</i> ("<a href="/wiki/Least_significant_bit" class="mw-redirect" title="Least significant bit">least significant bit</a> first") and <i>MSB-first</i> ("<a href="/wiki/Most_significant_bit" class="mw-redirect" title="Most significant bit">most significant bit</a> first").  In LSB-first packing, the first code is aligned so that the least significant bit of the code falls in the least significant bit of the first stream byte, and if the code has more than 8 bits, the high-order bits left over are aligned with the least significant bits of the next byte; further codes are packed with LSB going into the least significant bit not yet used in the current stream byte, proceeding into further bytes as necessary. MSB-first packing aligns the first code so that its <i>most</i> significant bit falls in the MSB of the first stream byte, with overflow aligned with the MSB of the next byte; further codes are written with MSB going into the most significant bit not yet used in the current stream byte.
+</p><p>GIF files use LSB-first packing order.  TIFF files and PDF files use MSB-first packing order.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=6" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following example illustrates the LZW algorithm in action, showing the status of the output and the <a href="/wiki/Dictionary_coder" title="Dictionary coder">dictionary</a> at every stage, both in encoding and decoding the data. This example has been constructed to give reasonable compression on a very short message.  In real text data, repetition is generally less pronounced, so longer input streams are typically necessary before the compression builds up efficiency.
+</p><p>The plaintext to be encoded (from an alphabet using only the capital letters) is:
+</p>
+<pre>TOBEORNOTTOBEORTOBEORNOT#
+</pre>
+<p>The <b>#</b> is a marker used to show that the end of the message has been reached. There are thus 26 symbols in the plaintext alphabet (the 26 capital letters <i>A</i> through <i>Z</i>), and the <i>#</i> character represents a stop code. We arbitrarily assign these the values 1 through 26 for the letters, and 0 for '#'. (Most flavors of LZW would put the stop code <i>after</i> the data alphabet, but nothing in the basic algorithm requires that.  The encoder and decoder only have to agree what value it has.)
+</p><p>A computer renders these as strings of <a href="/wiki/Bit" title="Bit">bits</a>.  Five-bit codes are needed to give sufficient combinations to encompass this set of 27 values. The dictionary is initialized with these 27 values.  As the dictionary grows, the codes must grow in width to accommodate the additional entries. A 5-bit code gives 2<sup>5</sup> = 32 possible combinations of bits, so when the 33rd dictionary word is created, the algorithm must switch at that point from 5-bit strings to 6-bit strings (for <i>all</i> code values, including those previously output with only five bits). Note that since the all-zero code 00000 is used, and is labeled "0", the 33rd dictionary entry is labeled <b>32</b>.  (Previously generated output is not affected by the code-width change, but once a 6-bit value is generated in the dictionary, it could conceivably be the next code emitted, so the width for subsequent output shifts to 6 bits to accommodate that.)
+</p><p>The initial dictionary, then, consists of the following entries:
+</p>
+<table class="wikitable" style="text-align: right; margin-left: auto; margin-right: auto;">
+
+<tbody><tr>
+<th>Symbol</th>
+<th>Binary</th>
+<th>Decimal
+</th></tr>
+<tr>
+<td>#</td>
+<td>00000</td>
+<td>0
+</td></tr>
+<tr>
+<td>A</td>
+<td>00001</td>
+<td>1
+</td></tr>
+<tr>
+<td>B</td>
+<td>00010</td>
+<td>2
+</td></tr>
+<tr>
+<td>C</td>
+<td>00011</td>
+<td>3
+</td></tr>
+<tr>
+<td>D</td>
+<td>00100</td>
+<td>4
+</td></tr>
+<tr>
+<td>E</td>
+<td>00101</td>
+<td>5
+</td></tr>
+<tr>
+<td>F</td>
+<td>00110</td>
+<td>6
+</td></tr>
+<tr>
+<td>G</td>
+<td>00111</td>
+<td>7
+</td></tr>
+<tr>
+<td>H</td>
+<td>01000</td>
+<td>8
+</td></tr>
+<tr>
+<td>I</td>
+<td>01001</td>
+<td>9
+</td></tr>
+<tr>
+<td>J</td>
+<td>01010</td>
+<td>10
+</td></tr>
+<tr>
+<td>K</td>
+<td>01011</td>
+<td>11
+</td></tr>
+<tr>
+<td>L</td>
+<td>01100</td>
+<td>12
+</td></tr>
+<tr>
+<td>M</td>
+<td>01101</td>
+<td>13
+</td></tr>
+<tr>
+<td>N</td>
+<td>01110</td>
+<td>14
+</td></tr>
+<tr>
+<td>O</td>
+<td>01111</td>
+<td>15
+</td></tr>
+<tr>
+<td>P</td>
+<td>10000</td>
+<td>16
+</td></tr>
+<tr>
+<td>Q</td>
+<td>10001</td>
+<td>17
+</td></tr>
+<tr>
+<td>R</td>
+<td>10010</td>
+<td>18
+</td></tr>
+<tr>
+<td>S</td>
+<td>10011</td>
+<td>19
+</td></tr>
+<tr>
+<td>T</td>
+<td>10100</td>
+<td>20
+</td></tr>
+<tr>
+<td>U</td>
+<td>10101</td>
+<td>21
+</td></tr>
+<tr>
+<td>V</td>
+<td>10110</td>
+<td>22
+</td></tr>
+<tr>
+<td>W</td>
+<td>10111</td>
+<td>23
+</td></tr>
+<tr>
+<td>X</td>
+<td>11000</td>
+<td>24
+</td></tr>
+<tr>
+<td>Y</td>
+<td>11001</td>
+<td>25
+</td></tr>
+<tr>
+<td>Z</td>
+<td>11010</td>
+<td>26
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Encoding_2">Encoding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=7" title="Edit section: Encoding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Buffer input characters in a sequence ω until ω + next character is not in the dictionary.  Emit the code for ω, and add ω + next character to the dictionary.  Start buffering again with the next character. (The string to be encoded is "TOBEORNOTTOBEORTOBEORNOT#".)
+</p>
+<table class="wikitable" style="text-align: right; margin-left: auto; margin-right: auto;">
+
+<tbody><tr>
+<th scope="col" width="6em" rowspan="2">Current Sequence
+</th>
+<th scope="col" width="4em" rowspan="2">Next Char
+</th>
+<th colspan="2">Output
+</th>
+<th scope="col" width="7em" rowspan="2" colspan="2">Extended Dictionary
+</th>
+<th rowspan="2">Comments
+</th></tr>
+<tr>
+<th>Code</th>
+<th>Bits
+</th></tr>
+<tr>
+<td style="text-align: center;">NULL
+</td>
+<td style="text-align: center;">T</td>
+<td></td>
+<td>
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;"></td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">T
+</td>
+<td style="text-align: center;">O
+</td>
+<td>20</td>
+<td><style data-mw-deduplicate="TemplateStyles:r886049734">.mw-parser-output .monospaced{font-family:monospace,monospace}</style><span class="monospaced">10100</span>
+</td>
+<td style="border-right: none;">27:
+</td>
+<td style="border-left: none;">TO
+</td>
+<td style="text-align: left;">27 = first available code after 0 through 26
+</td></tr>
+<tr>
+<td style="text-align: center;">O
+</td>
+<td style="text-align: center;">B
+</td>
+<td>15</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">01111</span>
+</td>
+<td style="border-right: none;">28:
+</td>
+<td style="border-left: none;">OB</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">B
+</td>
+<td style="text-align: center;">E
+</td>
+<td>2</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">00010</span>
+</td>
+<td style="border-right: none;">29:
+</td>
+<td style="border-left: none;">BE</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">E
+</td>
+<td style="text-align: center;">O
+</td>
+<td>5</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">00101</span>
+</td>
+<td style="border-right: none;">30:
+</td>
+<td style="border-left: none;">EO</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">O
+</td>
+<td style="text-align: center;">R
+</td>
+<td>15</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">01111</span>
+</td>
+<td style="border-right: none;">31:
+</td>
+<td style="border-left: none;">OR</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">R
+</td>
+<td style="text-align: center;">N
+</td>
+<td>18</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">10010</span>
+</td>
+<td style="border-right: none;">32:
+</td>
+<td style="border-left: none;">RN
+</td>
+<td style="text-align: left;">32 requires 6 bits, so for next output use 6 bits
+</td></tr>
+<tr>
+<td style="text-align: center;">N
+</td>
+<td style="text-align: center;">O
+</td>
+<td>14</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">001110</span>
+</td>
+<td style="border-right: none;">33:
+</td>
+<td style="border-left: none;">NO</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">O
+</td>
+<td style="text-align: center;">T
+</td>
+<td>15</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">001111</span>
+</td>
+<td style="border-right: none;">34:
+</td>
+<td style="border-left: none;">OT</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">T
+</td>
+<td style="text-align: center;">T
+</td>
+<td>20</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">010100</span>
+</td>
+<td style="border-right: none;">35:
+</td>
+<td style="border-left: none;">TT</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">TO
+</td>
+<td style="text-align: center;">B
+</td>
+<td>27</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">011011</span>
+</td>
+<td style="border-right: none;">36:
+</td>
+<td style="border-left: none;">TOB</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">BE
+</td>
+<td style="text-align: center;">O
+</td>
+<td>29</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">011101</span>
+</td>
+<td style="border-right: none;">37:
+</td>
+<td style="border-left: none;">BEO</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">OR
+</td>
+<td style="text-align: center;">T
+</td>
+<td>31</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">011111</span>
+</td>
+<td style="border-right: none;">38:
+</td>
+<td style="border-left: none;">ORT</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">TOB
+</td>
+<td style="text-align: center;">E
+</td>
+<td>36</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">100100</span>
+</td>
+<td style="border-right: none;">39:
+</td>
+<td style="border-left: none;">TOBE</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">EO
+</td>
+<td style="text-align: center;">R
+</td>
+<td>30</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">011110</span>
+</td>
+<td style="border-right: none;">40:
+</td>
+<td style="border-left: none;">EOR</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">RN
+</td>
+<td style="text-align: center;">O
+</td>
+<td>32</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">100000</span>
+</td>
+<td style="border-right: none;">41:
+</td>
+<td style="border-left: none;">RNO</td>
+<td>
+</td></tr>
+<tr>
+<td style="text-align: center;">OT
+</td>
+<td style="text-align: center;">#
+</td>
+<td>34</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">100010</span>
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;">
+</td>
+<td style="text-align: left;"># stops the algorithm; send the cur seq
+</td></tr>
+<tr>
+<td></td>
+<td></td>
+<td>0</td>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">000000</span>
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;">
+</td>
+<td style="text-align: left;">and the stop code
+</td></tr>
+</tbody></table>
+<dl><dd>Unencoded length = 25 symbols × 5 bits/symbol = 125 bits</dd>
+<dd>Encoded length = (6 codes × 5 bits/code) + (11 codes × 6 bits/code) = 96 bits.</dd></dl>
+<p>Using LZW has saved 29 bits out of 125, reducing the message by more than 23%. If the message were longer, then the dictionary words would begin to represent longer and longer sections of text, sending repeated words very compactly.
+</p>
+<h3><span class="mw-headline" id="Decoding_2">Decoding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=8" title="Edit section: Decoding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To decode an LZW-compressed archive, one needs to know in advance the initial dictionary used, but additional entries can be reconstructed as they are always simply <a href="/wiki/Concatenation" title="Concatenation">concatenations</a> of previous entries.
+</p>
+<table class="wikitable" style="text-align: right; margin-left: auto; margin-right: auto;">
+
+<tbody><tr>
+<th colspan="2">Input
+</th>
+<th scope="col" width="6em" rowspan="2">Output Sequence
+</th>
+<th colspan="4">New Dictionary Entry
+</th>
+<th rowspan="2">Comments
+</th></tr>
+<tr>
+<th>Bits</th>
+<th>Code
+</th>
+<th scope="col" width="6em" colspan="2">Full
+</th>
+<th scope="col" width="6em" colspan="2">Conjecture
+</th></tr>
+<tr>
+<td>10100</td>
+<td>20
+</td>
+<td style="text-align: center;">T
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;">
+</td>
+<td style="border-right: none;">27:
+</td>
+<td style="border-left: none;">T?</td>
+<td>
+</td></tr>
+<tr>
+<td>01111</td>
+<td>15
+</td>
+<td style="text-align: center;">O
+</td>
+<td style="border-right: none;">27:
+</td>
+<td style="border-left: none;">TO
+</td>
+<td style="border-right: none;">28:
+</td>
+<td style="border-left: none;">O?</td>
+<td>
+</td></tr>
+<tr>
+<td>00010</td>
+<td>2
+</td>
+<td style="text-align: center;">B
+</td>
+<td style="border-right: none;">28:
+</td>
+<td style="border-left: none;">OB
+</td>
+<td style="border-right: none;">29:
+</td>
+<td style="border-left: none;">B?</td>
+<td>
+</td></tr>
+<tr>
+<td>00101</td>
+<td>5
+</td>
+<td style="text-align: center;">E
+</td>
+<td style="border-right: none;">29:
+</td>
+<td style="border-left: none;">BE
+</td>
+<td style="border-right: none;">30:
+</td>
+<td style="border-left: none;">E?</td>
+<td>
+</td></tr>
+<tr>
+<td>01111</td>
+<td>15
+</td>
+<td style="text-align: center;">O
+</td>
+<td style="border-right: none;">30:
+</td>
+<td style="border-left: none;">EO
+</td>
+<td style="border-right: none;">31:
+</td>
+<td style="border-left: none;">O?</td>
+<td>
+</td></tr>
+<tr>
+<td>10010</td>
+<td>18
+</td>
+<td style="text-align: center;">R
+</td>
+<td style="border-right: none;">31:
+</td>
+<td style="border-left: none;">OR
+</td>
+<td style="border-right: none;">32:
+</td>
+<td style="border-left: none;">R?
+</td>
+<td style="text-align: left;">created code 31 (last to fit in 5 bits)
+</td></tr>
+<tr>
+<td>001110</td>
+<td>14
+</td>
+<td style="text-align: center;">N
+</td>
+<td style="border-right: none;">32:
+</td>
+<td style="border-left: none;">RN
+</td>
+<td style="border-right: none;">33:
+</td>
+<td style="border-left: none;">N?
+</td>
+<td style="text-align: left;">so start reading input at 6 bits
+</td></tr>
+<tr>
+<td>001111</td>
+<td>15
+</td>
+<td style="text-align: center;">O
+</td>
+<td style="border-right: none;">33:
+</td>
+<td style="border-left: none;">NO
+</td>
+<td style="border-right: none;">34:
+</td>
+<td style="border-left: none;">O?</td>
+<td>
+</td></tr>
+<tr>
+<td>010100</td>
+<td>20
+</td>
+<td style="text-align: center;">T
+</td>
+<td style="border-right: none;">34:
+</td>
+<td style="border-left: none;">OT
+</td>
+<td style="border-right: none;">35:
+</td>
+<td style="border-left: none;">T?</td>
+<td>
+</td></tr>
+<tr>
+<td>011011</td>
+<td>27
+</td>
+<td style="text-align: center;">TO
+</td>
+<td style="border-right: none;">35:
+</td>
+<td style="border-left: none;">TT
+</td>
+<td style="border-right: none;">36:
+</td>
+<td style="border-left: none;">TO?</td>
+<td>
+</td></tr>
+<tr>
+<td>011101</td>
+<td>29
+</td>
+<td style="text-align: center;">BE
+</td>
+<td style="border-right: none;">36:
+</td>
+<td style="border-left: none;">TOB
+</td>
+<td style="border-right: none;">37:
+</td>
+<td style="border-left: none;">BE?
+</td>
+<td style="text-align: left;">36 = TO + 1st symbol (B) of
+</td></tr>
+<tr>
+<td>011111</td>
+<td>31
+</td>
+<td style="text-align: center;">OR
+</td>
+<td style="border-right: none;">37:
+</td>
+<td style="border-left: none;">BEO
+</td>
+<td style="border-right: none;">38:
+</td>
+<td style="border-left: none;">OR?
+</td>
+<td style="text-align: left;">next coded sequence received (BE)
+</td></tr>
+<tr>
+<td>100100</td>
+<td>36
+</td>
+<td style="text-align: center;">TOB
+</td>
+<td style="border-right: none;">38:
+</td>
+<td style="border-left: none;">ORT
+</td>
+<td style="border-right: none;">39:
+</td>
+<td style="border-left: none;">TOB?</td>
+<td>
+</td></tr>
+<tr>
+<td>011110</td>
+<td>30
+</td>
+<td style="text-align: center;">EO
+</td>
+<td style="border-right: none;">39:
+</td>
+<td style="border-left: none;">TOBE
+</td>
+<td style="border-right: none;">40:
+</td>
+<td style="border-left: none;">EO?</td>
+<td>
+</td></tr>
+<tr>
+<td>100000</td>
+<td>32
+</td>
+<td style="text-align: center;">RN
+</td>
+<td style="border-right: none;">40:
+</td>
+<td style="border-left: none;">EOR
+</td>
+<td style="border-right: none;">41:
+</td>
+<td style="border-left: none;">RN?</td>
+<td>
+</td></tr>
+<tr>
+<td>100010</td>
+<td>34
+</td>
+<td style="text-align: center;">OT
+</td>
+<td style="border-right: none;">41:
+</td>
+<td style="border-left: none;">RNO
+</td>
+<td style="border-right: none;">42:
+</td>
+<td style="border-left: none;">OT?</td>
+<td>
+</td></tr>
+<tr>
+<td>000000</td>
+<td>0
+</td>
+<td style="text-align: center;">#
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;">
+</td>
+<td style="border-right: none;">
+</td>
+<td style="border-left: none;"></td>
+<td>
+</td></tr>
+</tbody></table>
+<p>At each stage, the decoder receives a code X; it looks X up in the table and outputs the sequence χ it codes, and it conjectures χ +&#160;? as the entry the encoder just added – because the encoder emitted X for χ precisely because χ +&#160;? was not in the table, and the encoder goes ahead and adds it.  But what is the missing letter?  It is the first letter in the sequence coded by the <i>next</i> code Z that the decoder receives.  So the decoder looks up Z, decodes it into the sequence ω and takes the first letter z and tacks it onto the end of χ as the next dictionary entry.
+</p><p>This works as long as the codes received are in the decoder's dictionary, so that they can be decoded into sequences.  What happens if the decoder receives a code Z that is not yet in its dictionary?  Since the decoder is always just one code behind the encoder, Z can be in the encoder's dictionary only if the encoder <i>just</i> generated it, when emitting the previous code X for χ.  Thus Z codes some ω that is χ +&#160;?, and the decoder can determine the unknown character as follows:
+</p>
+<ol><li>The decoder sees X and then Z, where X codes the sequence χ and Z codes some unknown sequence ω.</li>
+<li>The decoder knows that the encoder just added Z as a code for χ + some unknown character <i>c</i>, so ω = χ + <i>c</i>.</li>
+<li>Since <i>c</i> is the first character in the input stream after χ, and since ω is the string appearing immediately after χ, <i>c</i> must be the first character of the sequence ω.</li>
+<li>Since χ is an initial substring of ω, <i>c</i> must also be the first character of χ.</li>
+<li>So even though the Z code is not in the table, the decoder is able to infer the unknown sequence and adds χ + (the first character of χ) to the table as the value of Z.</li></ol>
+<p>This situation occurs whenever the encoder encounters input of the form <i>cScSc</i>, where <i>c</i> is a single character, <i>S</i> is a string and <i>cS</i> is already in the dictionary, but <i>cSc</i> is not. The encoder emits the code for <i>cS</i>, putting a new code for <i>cSc</i> into the dictionary. Next it sees <i>cSc</i> in the input (starting at the second <i>c</i> of <i>cScSc</i>) and emits the new code it just inserted.  The argument above shows that whenever the decoder receives a code not in its dictionary, the situation must look like this.
+</p><p>Although input of form <i>cScSc</i> might seem unlikely, this pattern is fairly common when the input stream is characterized by significant repetition.  In particular, long strings of a single character (which are common in the kinds of images LZW is often used to encode) repeatedly generate patterns of this sort.
+</p>
+<h2><span class="mw-headline" id="Further_coding">Further coding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=9" title="Edit section: Further coding">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The simple scheme described above focuses on the LZW algorithm itself.  Many applications apply further encoding to the sequence of output symbols.  Some package the coded stream as printable characters using some form of <a href="/wiki/Binary-to-text_encoding" title="Binary-to-text encoding">binary-to-text encoding</a>; this increases the encoded length and decreases the compression rate.  Conversely, increased compression can often be achieved with an <i>adaptive entropy encoder</i>. Such a coder estimates the probability distribution for the value of the next symbol, based on the observed frequencies of values so far.  A standard entropy encoding such as <a href="/wiki/Huffman_coding" title="Huffman coding">Huffman coding</a> or <a href="/wiki/Arithmetic_coding" title="Arithmetic coding">arithmetic coding</a> then uses shorter codes for values with higher probabilities.
+</p>
+<h2><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=10" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>LZW compression became the first widely used universal data compression method on computers. A large <a href="/wiki/English_language" title="English language">English</a> text file can typically be compressed via LZW to about half its original size.
+</p><p>LZW was used in the public-domain program <a href="/wiki/Compress" title="Compress">compress</a>, which became a more or less standard utility in <a href="/wiki/Unix" title="Unix">Unix</a> systems around 1986. It has since disappeared from many distributions, both because it infringed the LZW patent and because <a href="/wiki/Gzip" title="Gzip">gzip</a> produced better compression ratios using the LZ77-based <a href="/wiki/DEFLATE" class="mw-redirect" title="DEFLATE">DEFLATE</a> algorithm, but as of 2008 at least FreeBSD includes both <a href="/wiki/Compress" title="Compress">compress</a> and <a href="/wiki/Uncompress" class="mw-redirect" title="Uncompress">uncompress</a> as a part of the distribution. Several other popular compression utilities also used LZW or closely related methods.
+</p><p>LZW became very widely used when it became part of the <a href="/wiki/Graphics_Interchange_Format" class="mw-redirect" title="Graphics Interchange Format">GIF</a> image format in 1987. It may also (optionally) be used in <a href="/wiki/TIFF" title="TIFF">TIFF</a> and <a href="/wiki/PDF" title="PDF">PDF</a> files. (Although LZW is available in <a href="/wiki/Adobe_Acrobat_Reader" class="mw-redirect" title="Adobe Acrobat Reader">Adobe Acrobat</a> software, Acrobat by default uses <a href="/wiki/DEFLATE" class="mw-redirect" title="DEFLATE">DEFLATE</a> for most text and color-table-based image data in PDF files.)
+</p>
+<h2><span class="mw-headline" id="Patents">Patents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=11" title="Edit section: Patents">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Graphics_Interchange_Format#Unisys_and_LZW_patent_enforcement" class="mw-redirect" title="Graphics Interchange Format">Graphics Interchange Format §&#160;Unisys and LZW patent enforcement</a></div>
+<p>Various <a href="/wiki/Patent" title="Patent">patents</a> have been issued in the <a href="/wiki/United_States" title="United States">United States</a> and other countries for LZW and similar algorithms. LZ78 was covered by <span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4464650">U.S. Patent 4,464,650</a></span> by Lempel, Ziv, Cohn, and Eastman, assigned to <a href="/wiki/Sperry_Corporation" title="Sperry Corporation">Sperry Corporation</a>, later <a href="/wiki/Unisys" title="Unisys">Unisys</a> Corporation, filed on August 10, 1981. Two US patents were issued for the LZW algorithm: <span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4814746">U.S. Patent 4,814,746</a></span> by <a href="/wiki/Victor_S._Miller" title="Victor S. Miller">Victor S. Miller</a> and <a href="/wiki/Mark_N._Wegman" title="Mark N. Wegman">Mark N. Wegman</a> and assigned to <a href="/wiki/International_Business_Machines" class="mw-redirect" title="International Business Machines">IBM</a>, originally filed on June 1, 1983, and <span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4558302">U.S. Patent 4,558,302</a></span> by Welch, assigned to Sperry Corporation, later Unisys Corporation, filed on June 20, 1983.
+</p><p>In addition to the above patents, Welch's 1983 patent also includes citations to several other patents that influenced it, including two 1980 Japanese patents (<a rel="nofollow" class="external text" href="https://patents.google.com/patent/JPS5719857A/en">JP9343880A</a> and <a rel="nofollow" class="external text" href="https://patents.google.com/patent/JPS57101937A/en">JP17790880A</a>) from <a href="/wiki/NEC" title="NEC">NEC</a>'s Jun Kanatsu, <span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4021782">U.S. Patent 4,021,782</a></span> (1974) from John S. Hoerning, <span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4366551">U.S. Patent 4,366,551</a></span> (1977) from Klaus E. Holtz, and a 1981 German patent (<a rel="nofollow" class="external text" href="https://patents.google.com/patent/DE3118676C2/en">DE19813118676</a>) from Karl Eckhart Heinz.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p>In 1993–94, and again in 1999, Unisys Corporation received widespread condemnation when it attempted to enforce licensing fees for LZW in GIF images.  The 1993–1994 Unisys-Compuserve (Compuserve being the creator of the GIF format) controversy engendered a Usenet comp.graphics discussion <i>Thoughts on a GIF-replacement file format</i>, which in turn fostered an email exchange that eventually culminated in the creation of the patent-unencumbered <a href="/wiki/Portable_Network_Graphics" title="Portable Network Graphics">Portable Network Graphics</a> (PNG) file format in 1995.
+</p><p>Unisys's US patent on the LZW algorithm expired on June 20, 2003,<sup id="cite_ref-LZWPatentInfo_4-0" class="reference"><a href="#cite_note-LZWPatentInfo-4">&#91;4&#93;</a></sup> 20 years after it had been filed. Patents that had been filed in the United Kingdom, France, Germany, Italy, Japan and Canada all expired in 2004,<sup id="cite_ref-LZWPatentInfo_4-1" class="reference"><a href="#cite_note-LZWPatentInfo-4">&#91;4&#93;</a></sup> likewise 20 years after they had been filed.
+</p>
+<h2><span class="mw-headline" id="Variants">Variants</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=12" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>LZMW (1985, by V. Miller, M. Wegman)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> – Searches input for the longest string already in the dictionary (the "current" match); adds the concatenation of the previous match with the current match to the dictionary.  (Dictionary entries thus grow more rapidly; but this scheme is much more complicated to implement.)  Miller and Wegman also suggest deleting low-frequency entries from the dictionary when the dictionary fills up.</li>
+<li>LZAP (1988, by James Storer)<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> – modification of LZMW: instead of adding just the concatenation of the previous match with the current match to the dictionary, add the concatenations of the previous match with each initial substring of the current match ("AP" stands for "all prefixes").  For example, if the previous match is "wiki" and current match is "pedia", then the LZAP encoder adds 5 new sequences to the dictionary: "wikip", "wikipe", "wikiped", "wikipedi", and "wikipedia", where the LZMW encoder adds only the one sequence "wikipedia". This eliminates some of the complexity of LZMW, at the price of adding more dictionary entries.</li>
+<li><a href="/wiki/LZWL" title="LZWL">LZWL</a> is a syllable-based variant of LZW.</li></ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/LZ77_and_LZ78" title="LZ77 and LZ78">LZ77 and LZ78</a></li>
+<li><a href="/wiki/Lempel-Ziv-Markov_chain_algorithm" class="mw-redirect" title="Lempel-Ziv-Markov chain algorithm">LZMA</a></li>
+<li><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski" title="Lempel–Ziv–Storer–Szymanski">Lempel–Ziv–Storer–Szymanski</a></li>
+<li><a href="/wiki/LZJB" title="LZJB">LZJB</a></li>
+<li><a href="/wiki/Context_tree_weighting" title="Context tree weighting">Context tree weighting</a></li>
+<li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">Discrete cosine transform</a> (DCT), a <a href="/wiki/Lossy_compression" title="Lossy compression">lossy compression</a> algorithm used in <a href="/wiki/JPEG" title="JPEG">JPEG</a> and <a href="/wiki/MPEG" class="mw-redirect" title="MPEG">MPEG</a> coding standards</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width reflist-columns-2" style="">
+<ol class="references">
+<li id="cite_note-WelchIEEE-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-WelchIEEE_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-WelchIEEE_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFWelch1984" class="citation journal cs1"><a href="/wiki/Terry_Welch" title="Terry Welch">Welch, Terry</a> (1984). <a rel="nofollow" class="external text" href="http://www.cs.duke.edu/courses/spring03/cps296.5/papers/welch_1984_technique_for.pdf">"A Technique for High-Performance Data Compression"</a> <span class="cs1-format">(PDF)</span>. <i>Computer</i>. <b>17</b> (6): 8–19. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FMC.1984.1659158">10.1109/MC.1984.1659158</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer&amp;rft.atitle=A+Technique+for+High-Performance+Data+Compression&amp;rft.volume=17&amp;rft.issue=6&amp;rft.pages=8-19&amp;rft.date=1984&amp;rft_id=info%3Adoi%2F10.1109%2FMC.1984.1659158&amp;rft.aulast=Welch&amp;rft.aufirst=Terry&amp;rft_id=http%3A%2F%2Fwww.cs.duke.edu%2Fcourses%2Fspring03%2Fcps296.5%2Fpapers%2Fwelch_1984_technique_for.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALempel%E2%80%93Ziv%E2%80%93Welch" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFZivLempel1978" class="citation journal cs1">Ziv, J.; Lempel, A. (1978). <a rel="nofollow" class="external text" href="http://www.cs.duke.edu/courses/spring03/cps296.5/papers/ziv_lempel_1978_variable-rate.pdf">"Compression of individual sequences via variable-rate coding"</a> <span class="cs1-format">(PDF)</span>. <i>IEEE Transactions on Information Theory</i>. <b>24</b> (5): 530. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.2892">10.1.1.14.2892</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTIT.1978.1055934">10.1109/TIT.1978.1055934</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Information+Theory&amp;rft.atitle=Compression+of+individual+sequences+via+variable-rate+coding&amp;rft.volume=24&amp;rft.issue=5&amp;rft.pages=530&amp;rft.date=1978&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.14.2892%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1109%2FTIT.1978.1055934&amp;rft.aulast=Ziv&amp;rft.aufirst=J.&amp;rft.au=Lempel%2C+A.&amp;rft_id=http%3A%2F%2Fwww.cs.duke.edu%2Fcourses%2Fspring03%2Fcps296.5%2Fpapers%2Fziv_lempel_1978_variable-rate.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALempel%E2%80%93Ziv%E2%80%93Welch" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4558302">U.S. Patent 4,558,302</a></span></span>
+</li>
+<li id="cite_note-LZWPatentInfo-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-LZWPatentInfo_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-LZWPatentInfo_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090626052026/http://www.unisys.com/about__unisys/lzw/">"LZW Patent Information"</a>. <i>About Unisys</i>. Unisys. Archived from <a rel="nofollow" class="external text" href="http://www.unisys.com/about__unisys/lzw/">the original</a> on June 26, 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">March 6,</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=About+Unisys&amp;rft.atitle=LZW+Patent+Information&amp;rft_id=http%3A%2F%2Fwww.unisys.com%2Fabout&#95;_unisys%2Flzw%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALempel%E2%80%93Ziv%E2%80%93Welch" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">David Salomon, <i>Data Compression – The complete reference</i>, 4th ed., page 209.</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">David Salomon, <i>Data Compression – The complete reference</i>, 4th ed., page 212.</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://rosettacode.org/wiki/LZW_compression">Rosettacode wiki, algorithm in various languages</a></li>
+<li><span><a rel="nofollow" class="external text" href="https://patents.google.com/patent/US4558302">U.S. Patent 4,558,302</a></span>, Terry A. Welch, <i>High speed data compression and decompression apparatus and method</i></li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/sharplzw/">SharpLZW – C# open source implementation</a></li>
+<li>MIT OpenCourseWare: <a rel="nofollow" class="external text" href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-050j-information-and-entropy-spring-2008/videos-homework-and-readings/unit-2-lecture-1/">Lecture including LZW algorithm</a></li>
+<li><a rel="nofollow" class="external text" href="http://marknelson.us/1989/10/01/lzw-data-compression/">Mark Nelson, <i>LZW Data Compression</i> on Dr. Dobbs Journal (October 1, 1989)</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.hanshq.net/zip2.html">Shrink, Reduce, and Implode: The Legacy Zip Compression Methods</a> explains LZW and how it was used in <a href="/wiki/PKZIP" title="PKZIP">PKZIP</a></li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1055622440">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox th,.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output th.navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Data_compression_methods" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r1054937957">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Compression_methods" title="Template:Compression methods"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Compression_methods" title="Template talk:Compression methods"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Compression_methods&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Data_compression_methods" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_compression" title="Data compression">Data compression</a> methods</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Lossless_compression" title="Lossless compression">Lossless</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;"><a href="/wiki/Entropy_coding" title="Entropy coding">Entropy type</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Arithmetic_coding" title="Arithmetic coding">Arithmetic</a></li>
+<li><a href="/wiki/Asymmetric_numeral_systems" title="Asymmetric numeral systems">Asymmetric numeral systems</a></li>
+<li><a href="/wiki/Golomb_coding" title="Golomb coding">Golomb</a></li>
+<li><a href="/wiki/Huffman_coding" title="Huffman coding">Huffman</a>
+<ul><li><a href="/wiki/Adaptive_Huffman_coding" title="Adaptive Huffman coding">Adaptive</a></li>
+<li><a href="/wiki/Canonical_Huffman_code" title="Canonical Huffman code">Canonical</a></li>
+<li><a href="/wiki/Modified_Huffman_coding" title="Modified Huffman coding">Modified</a></li></ul></li>
+<li><a href="/wiki/Range_coding" title="Range coding">Range</a></li>
+<li><a href="/wiki/Shannon_coding" title="Shannon coding">Shannon</a></li>
+<li><a href="/wiki/Shannon%E2%80%93Fano_coding" title="Shannon–Fano coding">Shannon–Fano</a></li>
+<li><a href="/wiki/Shannon%E2%80%93Fano%E2%80%93Elias_coding" title="Shannon–Fano–Elias coding">Shannon–Fano–Elias</a></li>
+<li><a href="/wiki/Tunstall_coding" title="Tunstall coding">Tunstall</a></li>
+<li><a href="/wiki/Unary_coding" title="Unary coding">Unary</a></li>
+<li><a href="/wiki/Universal_code_(data_compression)" title="Universal code (data compression)">Universal</a>
+<ul><li><a href="/wiki/Exponential-Golomb_coding" title="Exponential-Golomb coding">Exp-Golomb</a></li>
+<li><a href="/wiki/Fibonacci_coding" title="Fibonacci coding">Fibonacci</a></li>
+<li><a href="/wiki/Elias_gamma_coding" title="Elias gamma coding">Gamma</a></li>
+<li><a href="/wiki/Levenshtein_coding" title="Levenshtein coding">Levenshtein</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;"><a href="/wiki/Dictionary_coder" title="Dictionary coder">Dictionary type</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Byte_pair_encoding" title="Byte pair encoding">Byte pair encoding</a></li>
+<li><a href="/wiki/LZ77_and_LZ78" title="LZ77 and LZ78">Lempel–Ziv</a>
+<ul><li><a href="/wiki/842_(compression_algorithm)" title="842 (compression algorithm)">842</a></li>
+<li><a href="/wiki/Brotli" title="Brotli">Brotli</a></li>
+<li><a href="/wiki/Deflate" title="Deflate">Deflate</a></li>
+<li><a href="/wiki/LZ4_(compression_algorithm)" title="LZ4 (compression algorithm)">LZ4</a></li>
+<li><a href="/wiki/LZFSE" title="LZFSE">LZFSE</a></li>
+<li><a href="/wiki/LZJB" title="LZJB">LZJB</a></li>
+<li><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm" title="Lempel–Ziv–Markov chain algorithm">LZMA</a></li>
+<li><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Oberhumer" title="Lempel–Ziv–Oberhumer">LZO</a></li>
+<li><a href="/wiki/LZRW" title="LZRW">LZRW</a></li>
+<li><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Stac" title="Lempel–Ziv–Stac">LZS</a></li>
+<li><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski" title="Lempel–Ziv–Storer–Szymanski">LZSS</a></li>
+<li><a class="mw-selflink selflink">LZW</a></li>
+<li><a href="/wiki/LZWL" title="LZWL">LZWL</a></li>
+<li><a href="/wiki/LZX" title="LZX">LZX</a></li>
+<li><a href="/wiki/Snappy_(compression)" title="Snappy (compression)">Snappy</a></li>
+<li><a href="/wiki/Zstandard" title="Zstandard">Zstandard</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Other types</th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Burrows%E2%80%93Wheeler_transform" title="Burrows–Wheeler transform">BWT</a></li>
+<li><a href="/wiki/Context_tree_weighting" title="Context tree weighting">CTW</a></li>
+<li><a href="/wiki/Delta_encoding" title="Delta encoding">Delta</a></li>
+<li><a href="/wiki/Dynamic_Markov_compression" title="Dynamic Markov compression">DMC</a></li>
+<li><a href="/wiki/Differential_pulse-code_modulation" title="Differential pulse-code modulation">DPCM</a></li>
+<li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">LDCT</a></li>
+<li><a href="/wiki/Move-to-front_transform" title="Move-to-front transform">MTF</a></li>
+<li><a href="/wiki/PAQ" title="PAQ">PAQ</a></li>
+<li><a href="/wiki/Prediction_by_partial_matching" title="Prediction by partial matching">PPM</a></li>
+<li><a href="/wiki/Run-length_encoding" title="Run-length encoding">RLE</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Lossy_compression" title="Lossy compression">Lossy</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;"><a href="/wiki/Transform_coding" title="Transform coding">Transform type</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">Discrete cosine transform</a>
+<ul><li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">DCT</a></li>
+<li><a href="/wiki/Modified_discrete_cosine_transform" title="Modified discrete cosine transform">MDCT</a></li></ul></li>
+<li><a href="/wiki/Discrete_sine_transform" title="Discrete sine transform">DST</a></li>
+<li><a href="/wiki/Fast_Fourier_transform" title="Fast Fourier transform">FFT</a></li>
+<li><a href="/wiki/Wavelet_transform" title="Wavelet transform">Wavelet</a>
+<ul><li><a href="/wiki/Daubechies_wavelet" title="Daubechies wavelet">Daubechies</a></li>
+<li><a href="/wiki/Discrete_wavelet_transform" title="Discrete wavelet transform">DWT</a></li>
+<li><a href="/wiki/Set_partitioning_in_hierarchical_trees" title="Set partitioning in hierarchical trees">SPIHT</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Predictive type</th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Differential_pulse-code_modulation" title="Differential pulse-code modulation">DPCM</a>
+<ul><li><a href="/wiki/Adaptive_differential_pulse-code_modulation" title="Adaptive differential pulse-code modulation">ADPCM</a></li></ul></li>
+<li><a href="/wiki/Linear_predictive_coding" title="Linear predictive coding">LPC</a>
+<ul><li><a href="/wiki/Algebraic_code-excited_linear_prediction" title="Algebraic code-excited linear prediction">ACELP</a></li>
+<li><a href="/wiki/Code-excited_linear_prediction" title="Code-excited linear prediction">CELP</a></li>
+<li><a href="/wiki/Log_area_ratio" title="Log area ratio">LAR</a></li>
+<li><a href="/wiki/Line_spectral_pairs" title="Line spectral pairs">LSP</a></li>
+<li><a href="/wiki/Warped_linear_predictive_coding" title="Warped linear predictive coding">WLPC</a></li></ul></li>
+<li>Motion
+<ul><li><a href="/wiki/Motion_compensation" title="Motion compensation">Compensation</a></li>
+<li><a href="/wiki/Motion_estimation" title="Motion estimation">Estimation</a></li>
+<li><a href="/wiki/Motion_vector" title="Motion vector">Vector</a></li></ul></li>
+<li><a href="/wiki/Psychoacoustics" title="Psychoacoustics">Psychoacoustic</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Data_compression#Audio" title="Data compression">Audio</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bit_rate" title="Bit rate">Bit rate</a>
+<ul><li><a href="/wiki/Average_bitrate" title="Average bitrate">ABR</a></li>
+<li><a href="/wiki/Constant_bitrate" title="Constant bitrate">CBR</a></li>
+<li><a href="/wiki/Variable_bitrate" title="Variable bitrate">VBR</a></li></ul></li>
+<li><a href="/wiki/Companding" title="Companding">Companding</a></li>
+<li><a href="/wiki/Convolution" title="Convolution">Convolution</a></li>
+<li><a href="/wiki/Dynamic_range" title="Dynamic range">Dynamic range</a></li>
+<li><a href="/wiki/Latency_(audio)" title="Latency (audio)">Latency</a></li>
+<li><a href="/wiki/Nyquist%E2%80%93Shannon_sampling_theorem" title="Nyquist–Shannon sampling theorem">Nyquist–Shannon theorem</a></li>
+<li><a href="/wiki/Sampling_(signal_processing)" title="Sampling (signal processing)">Sampling</a></li>
+<li><a href="/wiki/Sound_quality" title="Sound quality">Sound quality</a></li>
+<li><a href="/wiki/Speech_coding" title="Speech coding">Speech coding</a></li>
+<li><a href="/wiki/Sub-band_coding" title="Sub-band coding">Sub-band coding</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;"><a href="/wiki/Audio_codec" title="Audio codec">Codec</a> parts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/A-law_algorithm" title="A-law algorithm">A-law</a></li>
+<li><a href="/wiki/%CE%9C-law_algorithm" title="Μ-law algorithm">μ-law</a></li>
+<li><a href="/wiki/Differential_pulse-code_modulation" title="Differential pulse-code modulation">DPCM</a>
+<ul><li><a href="/wiki/Adaptive_differential_pulse-code_modulation" title="Adaptive differential pulse-code modulation">ADPCM</a></li>
+<li><a href="/wiki/Delta_modulation" title="Delta modulation">DM</a></li></ul></li>
+<li><a href="/wiki/Fourier_transform" title="Fourier transform">FT</a>
+<ul><li><a href="/wiki/Fast_Fourier_transform" title="Fast Fourier transform">FFT</a></li></ul></li>
+<li><a href="/wiki/Linear_predictive_coding" title="Linear predictive coding">LPC</a>
+<ul><li><a href="/wiki/Algebraic_code-excited_linear_prediction" title="Algebraic code-excited linear prediction">ACELP</a></li>
+<li><a href="/wiki/Code-excited_linear_prediction" title="Code-excited linear prediction">CELP</a></li>
+<li><a href="/wiki/Log_area_ratio" title="Log area ratio">LAR</a></li>
+<li><a href="/wiki/Line_spectral_pairs" title="Line spectral pairs">LSP</a></li>
+<li><a href="/wiki/Warped_linear_predictive_coding" title="Warped linear predictive coding">WLPC</a></li></ul></li>
+<li><a href="/wiki/Modified_discrete_cosine_transform" title="Modified discrete cosine transform">MDCT</a></li>
+<li><a href="/wiki/Psychoacoustics" title="Psychoacoustics">Psychoacoustic model</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Image_compression" title="Image compression">Image</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Chroma_subsampling" title="Chroma subsampling">Chroma subsampling</a></li>
+<li><a href="/wiki/Coding_tree_unit" title="Coding tree unit">Coding tree unit</a></li>
+<li><a href="/wiki/Color_space" title="Color space">Color space</a></li>
+<li><a href="/wiki/Compression_artifact" title="Compression artifact">Compression artifact</a></li>
+<li><a href="/wiki/Image_resolution" title="Image resolution">Image resolution</a></li>
+<li><a href="/wiki/Macroblock" title="Macroblock">Macroblock</a></li>
+<li><a href="/wiki/Pixel" title="Pixel">Pixel</a></li>
+<li><a href="/wiki/Peak_signal-to-noise_ratio" title="Peak signal-to-noise ratio">PSNR</a></li>
+<li><a href="/wiki/Quantization_(image_processing)" title="Quantization (image processing)">Quantization</a></li>
+<li><a href="/wiki/Standard_test_image" title="Standard test image">Standard test image</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Methods</th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Chain_code" title="Chain code">Chain code</a></li>
+<li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">DCT</a></li>
+<li><a href="/wiki/Deflate" title="Deflate">Deflate</a></li>
+<li><a href="/wiki/Fractal_compression" title="Fractal compression">Fractal</a></li>
+<li><a href="/wiki/Karhunen%E2%80%93Lo%C3%A8ve_theorem" title="Karhunen–Loève theorem">KLT</a></li>
+<li><a href="/wiki/Pyramid_(image_processing)" title="Pyramid (image processing)">LP</a></li>
+<li><a href="/wiki/Run-length_encoding" title="Run-length encoding">RLE</a></li>
+<li><a href="/wiki/Wavelet_transform" title="Wavelet transform">Wavelet</a>
+<ul><li><a href="/wiki/Daubechies_wavelet" title="Daubechies wavelet">Daubechies</a></li>
+<li><a href="/wiki/Discrete_wavelet_transform" title="Discrete wavelet transform">DWT</a></li>
+<li><a href="/wiki/Embedded_Zerotrees_of_Wavelet_transforms" title="Embedded Zerotrees of Wavelet transforms">EZW</a></li>
+<li><a href="/wiki/Set_partitioning_in_hierarchical_trees" title="Set partitioning in hierarchical trees">SPIHT</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Data_compression#Video" title="Data compression">Video</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bit_rate" title="Bit rate">Bit rate</a>
+<ul><li><a href="/wiki/Average_bitrate" title="Average bitrate">ABR</a></li>
+<li><a href="/wiki/Constant_bitrate" title="Constant bitrate">CBR</a></li>
+<li><a href="/wiki/Variable_bitrate" title="Variable bitrate">VBR</a></li></ul></li>
+<li><a href="/wiki/Display_resolution" title="Display resolution">Display resolution</a></li>
+<li><a href="/wiki/Film_frame" title="Film frame">Frame</a></li>
+<li><a href="/wiki/Frame_rate" title="Frame rate">Frame rate</a></li>
+<li><a href="/wiki/Video_compression_picture_types" title="Video compression picture types">Frame types</a></li>
+<li><a href="/wiki/Interlaced_video" title="Interlaced video">Interlace</a></li>
+<li><a href="/wiki/Video#Characteristics_of_video_streams" title="Video">Video characteristics</a></li>
+<li><a href="/wiki/Video_quality" title="Video quality">Video quality</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:7.0em;font-weight:normal;"><a href="/wiki/Video_codec" title="Video codec">Codec</a> parts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Discrete_cosine_transform" title="Discrete cosine transform">DCT</a></li>
+<li><a href="/wiki/Differential_pulse-code_modulation" title="Differential pulse-code modulation">DPCM</a></li>
+<li><a href="/wiki/Deblocking_filter" title="Deblocking filter">Deblocking filter</a></li>
+<li><a href="/wiki/Lapped_transform" title="Lapped transform">Lapped transform</a></li>
+<li>Motion
+<ul><li><a href="/wiki/Motion_compensation" title="Motion compensation">Compensation</a></li>
+<li><a href="/wiki/Motion_estimation" title="Motion estimation">Estimation</a></li>
+<li><a href="/wiki/Motion_vector" title="Motion vector">Vector</a></li></ul></li>
+<li><a href="/wiki/Wavelet_transform" title="Wavelet transform">Wavelet</a>
+<ul><li><a href="/wiki/Daubechies_wavelet" title="Daubechies wavelet">Daubechies</a></li>
+<li><a href="/wiki/Discrete_wavelet_transform" title="Discrete wavelet transform">DWT</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Information_theory" title="Information theory">Theory</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Entropy_(information_theory)" title="Entropy (information theory)">Entropy</a></li>
+<li><a href="/wiki/Information_theory" title="Information theory">Information theory</a>
+<ul><li><a href="/wiki/Timeline_of_information_theory" title="Timeline of information theory">Timeline</a></li></ul></li>
+<li><a href="/wiki/Kolmogorov_complexity" title="Kolmogorov complexity">Kolmogorov complexity</a></li>
+<li><a href="/wiki/Quantization_(signal_processing)" title="Quantization (signal processing)">Quantization</a></li>
+<li><a href="/wiki/Rate%E2%80%93distortion_theory" title="Rate–distortion theory">Rate–distortion</a></li>
+<li><a href="/wiki/Redundancy_(information_theory)" title="Redundancy (information theory)">Redundancy</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><img alt="Template" src="//upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/16px-Symbol_template_class.svg.png" decoding="async" title="Template" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/23px-Symbol_template_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/31px-Symbol_template_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Template:Compression_formats" title="Template:Compression formats">Compression formats</a></li>
+<li><img alt="Template" src="//upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/16px-Symbol_template_class.svg.png" decoding="async" title="Template" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/23px-Symbol_template_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/31px-Symbol_template_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Template:Compression_software" title="Template:Compression software">Compression software (codecs)</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!--
+NewPP limit report
+Parsed by mw1417
+Cached time: 20211127001001
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.486 seconds
+Real time usage: 0.642 seconds
+Preprocessor visited node count: 1852/1000000
+Post‐expand include size: 65109/2097152 bytes
+Template argument size: 1779/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 18815/5000000 bytes
+Lua time usage: 0.241/10.000 seconds
+Lua memory usage: 4067680/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  515.527      1 -total
+ 31.11%  160.400      1 Template:Reflist
+ 22.37%  115.333      2 Template:Cite_journal
+ 19.29%   99.471      6 Template:Navbox
+ 18.17%   93.676      1 Template:Compression_Methods
+ 15.93%   82.128      1 Template:No_footnotes
+ 15.92%   82.060      1 Template:Short_description
+ 12.87%   66.372      1 Template:Ambox
+  8.70%   44.834      7 Template:US_patent
+  8.39%   43.243      1 Template:Pagetype
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:75854-0!canonical and timestamp 20211127001000 and revision id 1050757532. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Lempel–Ziv–Welch&amp;oldid=1050757532">https://en.wikipedia.org/w/index.php?title=Lempel–Ziv–Welch&amp;oldid=1050757532</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Lossless_compression_algorithms" title="Category:Lossless compression algorithms">Lossless compression algorithms</a></li><li><a href="/wiki/Category:Computer-related_introductions_in_1984" title="Category:Computer-related introductions in 1984">Computer-related introductions in 1984</a></li><li><a href="/wiki/Category:Discovery_and_invention_controversies" title="Category:Discovery and invention controversies">Discovery and invention controversies</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_August_2017" title="Category:Articles lacking in-text citations from August 2017">Articles lacking in-text citations from August 2017</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_with_example_pseudocode" title="Category:Articles with example pseudocode">Articles with example pseudocode</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation"
+	 >
+	<h3 id="p-personal-label" aria-label="" class="vector-menu-heading">
+
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Lempel%E2%80%93Ziv%E2%80%93Welch" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Lempel%E2%80%93Ziv%E2%80%93Welch" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation"
+	 >
+	<h3 id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Lempel%E2%80%93Ziv%E2%80%93Welch" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+
+		<span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"></ul>
+
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation"
+	 >
+	<h3 id="p-views-label" aria-label="" class="vector-menu-heading">
+
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" aria-label="" class="vector-menu-heading">
+
+		<span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"></ul>
+
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class=" vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"
+	 >
+	<h3 id="p-navigation-label" aria-label="" class="vector-menu-heading">
+
+		<span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+
+	</div>
+</nav>
+
+	<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation"
+	 >
+	<h3 id="p-interaction-label" aria-label="" class="vector-menu-heading">
+
+		<span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"
+	 >
+	<h3 id="p-tb-label" aria-label="" class="vector-menu-heading">
+
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Lempel%E2%80%93Ziv%E2%80%93Welch" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Lempel%E2%80%93Ziv%E2%80%93Welch" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;oldid=1050757532" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;id=1050757532&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2681" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation"
+	 >
+	<h3 id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+
+		<span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+
+	</div>
+</nav>
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation"
+	 >
+	<h3 id="p-wikibase-otherprojects-label" aria-label="" class="vector-menu-heading">
+
+		<span>In other projects</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Lempel%E2%80%93Ziv%E2%80%93Welch" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation"
+	 >
+	<h3 id="p-lang-label" aria-label="" class="vector-menu-heading">
+
+		<span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D9%84%D8%A7%D9%85%D8%A8%D9%84_%D9%88%D8%B2%D9%8A%D9%81_%D9%88%D9%88%D9%8A%D9%84%D8%B4" title="خوارزمية لامبل وزيف وويلش – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/LZW" title="LZW – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/LZW" title="LZW – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Lempel-Ziv-Welch-Algorithmus" title="Lempel-Ziv-Welch-Algorithmus – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Lempel-Ziv-Welch" title="Lempel-Ziv-Welch – Estonian" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/LZW" title="LZW – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84_%D8%B2%D8%AF_%D8%AF%D8%A7%D8%A8%D9%84%DB%8C%D9%88" title="ال زد دابلیو – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Lempel-Ziv-Welch" title="Lempel-Ziv-Welch – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/LZW" title="LZW – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A5%87%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%87%E0%A4%B2-%E0%A4%9C%E0%A4%BC%E0%A4%BF%E0%A4%B5-%E0%A4%B5%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%9A" title="लेम्पेल-ज़िव-वेल्च – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Lempel-Ziv-Welch" title="Lempel-Ziv-Welch – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/LZW" title="LZW – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Lempel_Ziv_Welch" title="Lempel Ziv Welch – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch" title="Lempel–Ziv–Welch – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/LZW" title="LZW – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/LZW" title="LZW – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D0%B5%D0%BC%D0%BF%D0%B5%D0%BB%D1%8F_%E2%80%94_%D0%97%D0%B8%D0%B2%D0%B0_%E2%80%94_%D0%92%D0%B5%D0%BB%D1%87%D0%B0" title="Алгоритм Лемпеля — Зива — Велча – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Lempel-Ziv-Welch" title="Lempel-Ziv-Welch – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D0%B5%D0%BC%D0%BF%D0%B5%D0%BB%D1%8F_%E2%80%94_%D0%97%D1%96%D0%B2%D0%B0_%E2%80%94_%D0%92%D0%B5%D0%BB%D1%87%D0%B0" title="Алгоритм Лемпеля — Зіва — Велча – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/LZW" title="LZW – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/LZW" title="LZW – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2681#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 19 October 2021, at 18:42<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.486","walltime":"0.642","ppvisitednodes":{"value":1852,"limit":1000000},"postexpandincludesize":{"value":65109,"limit":2097152},"templateargumentsize":{"value":1779,"limit":2097152},"expansiondepth":{"value":13,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":18815,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  515.527      1 -total"," 31.11%  160.400      1 Template:Reflist"," 22.37%  115.333      2 Template:Cite_journal"," 19.29%   99.471      6 Template:Navbox"," 18.17%   93.676      1 Template:Compression_Methods"," 15.93%   82.128      1 Template:No_footnotes"," 15.92%   82.060      1 Template:Short_description"," 12.87%   66.372      1 Template:Ambox","  8.70%   44.834      7 Template:US_patent","  8.39%   43.243      1 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.241","limit":"10.000"},"limitreport-memusage":{"value":4067680,"limit":52428800}},"cachereport":{"origin":"mw1417","timestamp":"20211127001001","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Lempel\u2013Ziv\u2013Welch","url":"https:\/\/en.wikipedia.org\/wiki\/Lempel%E2%80%93Ziv%E2%80%93Welch","sameAs":"http:\/\/www.wikidata.org\/entity\/Q2681","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q2681","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-10-08T17:18:27Z","dateModified":"2021-10-19T18:42:29Z","headline":"universal lossless data compression algorithm"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":156,"wgHostname":"mw1331"});});</script>
+</body>
+</html>

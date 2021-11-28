@@ -16,6 +16,7 @@ object Decoder {
     var prevCode: Int = reader.readBits(codeLength) //init prevCode with first code
     var prevSeq: Seq[Byte] = if (prevCode == params.eofCode) Seq() else dict(prevCode) //process empty input seq case
     res ++= prevSeq
+    if(params.showDebug && params.showDebugWrittenCodes) println(s"emitting ${prevSeq.map(_.toChar).mkString("")}")
 
     var EOF: Boolean = prevCode == params.eofCode
     while (!EOF) {
@@ -26,7 +27,7 @@ object Decoder {
         dict.get(currentCode) match {
           case Some(codedSeq) =>
             //add to dictionary previous pattern + first char of current pattern
-            val toDict = prevSeq ++ codedSeq
+            val toDict = prevSeq :+ codedSeq.head
 
             if (params.showDebug && params.showDebugNewCodes) {
               if (params.bytesAsChars)
@@ -40,6 +41,7 @@ object Decoder {
 
             //output decoded data
             res ++= codedSeq
+            if(params.showDebug && params.showDebugWrittenCodes) println(s"emitting ${codedSeq.map(_.toChar).mkString("")}")
             prevSeq = codedSeq
             prevCode = currentCode
           case None =>
@@ -57,8 +59,9 @@ object Decoder {
             currentCodeNumber += 1
 
             // output decoded data
-            res ++= prevSeq ++ prevSeq //todoCheck
-            prevSeq = prevSeq
+            res ++= toDict //todoCheck
+            if(params.showDebug && params.showDebugWrittenCodes) println(s"emitting ${toDict.map(_.toChar).mkString("")}")
+            prevSeq = toDict
             prevCode = currentCode
         }
       }

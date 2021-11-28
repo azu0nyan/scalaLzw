@@ -22,7 +22,7 @@ object Encoder {
         case Some(_) =>
           notInOutput = toTestInDict
         case None =>
-          if(params.showDebugWrittenCodes) println(s"emitting ${dict(notInOutput)} with length $currentLength ${Helpers.toBinaryStingLittleEndian(dict(notInOutput), currentLength)}")
+          if(params.showDebug && params.showDebugWrittenCodes) println(s"emitting ${dict(notInOutput)} with length $currentLength ${Helpers.toBinaryStingLittleEndian(dict(notInOutput), currentLength)}")
           outWriter.writeBits(dict(notInOutput) , currentLength)
 
           if(params.showDebug && params.showDebugNewCodes) {
@@ -37,11 +37,12 @@ object Encoder {
           notInOutput = Seq(currentChar)
       }
     }
-    if(params.showDebugWrittenCodes)
+    if(params.showDebug && params.showDebugWrittenCodes)
       println(s"emitting ${dict(notInOutput)} with length $currentLength ${Helpers.toBinaryStingLittleEndian(dict(notInOutput), currentLength)}")
     outWriter.writeBits(dict(notInOutput), currentLength)
     outWriter.writeBits(params.eofCode, currentLength)
     val res = outWriter.toArray
+    println(s"Dictionary size ${dict.size}")
     println(s"encoded length ${res.length * 8d} bits")
     println(f"compression ratio ${in.length.toDouble / res.length.toDouble}%.6f")
     if(params.showDebug && params.showDebugBytes){
