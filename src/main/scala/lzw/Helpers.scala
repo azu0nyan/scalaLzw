@@ -4,6 +4,10 @@ import scala.collection.mutable
 
 object Helpers {
 
+  def codeLength(code: Int): Int =
+    Integer.numberOfTrailingZeros(Integer.highestOneBit(code)) + 1
+
+
   def initialEncoderDict: mutable.Map[Seq[Byte], Int] = {
     val dict: mutable.Map[Seq[Byte], Int] = mutable.Map()
     for (i <- Byte.MinValue to Byte.MaxValue)
@@ -43,10 +47,10 @@ object Helpers {
 
   def printByGroups(arr: Array[Byte], cap: Int, groupLength: Int = 8, groupInLine: Int = 10): Unit = {
     val toStr = arr.toSeq.take(cap)
-    val strGroups:Seq[String] = toStr.map(Helpers.byteToStringLittleEndian).reduce(_ + _).grouped(groupLength).map(str => str + " ").toSeq
-    val lines:Seq[Seq[String]] = strGroups.grouped(groupInLine).toSeq
+    val strGroups: Seq[String] = toStr.map(Helpers.byteToStringLittleEndian).reduce(_ + _).grouped(groupLength).map(str => str + " ").toSeq
+    val lines: Seq[Seq[String]] = strGroups.grouped(groupInLine).toSeq
     val str = lines.map(l => l.reduce(_ + _)).mkString("\n")
-    val finalStr = if(arr.length > cap) str + "....." else str
+    val finalStr = if (arr.length > cap) str + "....." else str
     println(finalStr)
   }
 
