@@ -2,10 +2,12 @@ package lzw
 
 import org.scalatest.funsuite.AnyFunSuite
 
+import java.io.PrintStream
+import java.nio.file.Path
 import scala.util.Random
 
 class EncodeDecodeTest extends AnyFunSuite {
-  def stringTest(str: String, params:Params = Params(showDebug = true)): Unit = {
+  def stringTest(str: String, params: Params = Params(showDebug = true)): Unit = {
     val arr = str.toArray.map(_.toByte)
     if (params.showDebug) println("input: " + new String(arr))
     val encoded = Encoder(arr)(params)
@@ -14,15 +16,15 @@ class EncodeDecodeTest extends AnyFunSuite {
     assert(arr.sameElements(decoded))
   }
 
-  test("510 test"){//todo
+  test("510 test") { //todo
     val p = Params(startCode = 500, maxCode = 512, showDebug = false)
     for (i <- 1 to 16000) {
       val r = new Random(i)
       val str = new String(r.nextBytes(100).map(b => ('a' + ((b + 256) % 10)).toChar))
       println(str)
       stringTest(str, p)
-//      stringTest(Helpers.toBinaryStingLittleEndian(i, j), p)
-//      stringTest(Helpers.toBinaryStingLittleEndian(~i, j), p)
+      //      stringTest(Helpers.toBinaryStingLittleEndian(i, j), p)
+      //      stringTest(Helpers.toBinaryStingLittleEndian(~i, j), p)
     }
   }
 
@@ -56,5 +58,18 @@ class EncodeDecodeTest extends AnyFunSuite {
     val chars = for (i <- 0 until 100000)
       sb.append(('a' + r.nextInt(26)).toChar)
     stringTest(sb.toString(), Params(showDebug = false))
+  }
+
+  test("file bug") {
+    val cl = 511
+    val p = Params(startCode = 510, maxCode = cl, showDebug = true, showDebugNewCodes = false)
+    println()
+    println(s"Encoding decoding with $cl")
+    Console.withOut(new PrintStream("encode.log")) {
+      FileEncoderDecoder.encode(Path.of("src/main/resources/testInput1"), Path.of("encoded"), p)
+    }
+    Console.withOut(new PrintStream("decode.log")) {
+      FileEncoderDecoder.decode(Path.of("encoded"), Path.of("decoded"), p)
+    }
   }
 }

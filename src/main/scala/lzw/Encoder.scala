@@ -62,7 +62,7 @@ object Encoder {
     println(s"encoded length ${res.length * 8} bits")
     println(f"compression ratio ${res.length.toDouble / in.length.toDouble}%.6f")
     if (params.showDebug && params.showDebugBytes) {
-      Helpers.printByGroups(res, params.debugBytesCap, 10, 10)
+      Helpers.printByGroups(res, params.debugBytesCap, 9, 10)
       //     Helpers.printByGroups(res, params.debugBytesCap, 8, 10)
     }
     res

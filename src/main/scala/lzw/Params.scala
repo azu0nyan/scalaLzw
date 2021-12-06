@@ -9,7 +9,7 @@ case class Params(
                    showDebugNewCodes:Boolean = true,
                    showDebugWrittenCodes:Boolean = true,
                    showDebugBytes:Boolean = true,
-                   debugBytesCap: Int = 2048,
+                   debugBytesCap: Int = 16536,
                    bytesAsChars:Boolean = true,
                    showDebugReading:Boolean = true
                  )

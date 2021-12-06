@@ -11,14 +11,14 @@ object Helpers {
   def initialEncoderDict: mutable.Map[Seq[Byte], Int] = {
     val dict: mutable.Map[Seq[Byte], Int] = mutable.Map()
     for (i <- Byte.MinValue to Byte.MaxValue)
-      dict += Seq(i.toByte) -> i
+      dict += Seq(i.toByte) -> (i + 128)
     dict
   }
 
   def initialDecoderDict: mutable.Map[Int, Seq[Byte]] = {
     val dict: mutable.Map[Int, Seq[Byte]] = mutable.Map()
     for (i <- Byte.MinValue to Byte.MaxValue)
-      dict += i -> Seq(i.toByte)
+      dict += (i + 128) -> Seq(i.toByte)
     dict
   }
 
